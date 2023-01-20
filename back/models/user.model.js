@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-  class User extends Sequelize.Model {
+  class Users extends Sequelize.Model {
     static initialize() {
       return this.init(config, settings);
     }
@@ -34,7 +34,7 @@ module.exports = (sequelize, Sequelize) => {
     register: {
       type: Sequelize.DATE,
       allowNull: false,
-      defaultValue: Sequelize.fn("now"),
+      defaultValue: Sequelize.NOW,
     },
     provider: {
       type: Sequelize.ENUM("local", "kakao"),
@@ -51,5 +51,5 @@ module.exports = (sequelize, Sequelize) => {
     sequelize,
   };
 
-  User.initialize();
+  Users.initialize();
 };
