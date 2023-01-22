@@ -2,6 +2,21 @@ require("dotenv").config()
 const env = process.env
 
 const config = {
+<<<<<<< HEAD
+  port: env.PORT,
+  salt: env.SALT,
+  db: {
+    development: {
+      username: env.DB_USER || "foo",
+      password: env.DB_PASSWORD || "boo",
+      port: env.DB_PORT || "1234",
+      database: env.DB_DATABASE || "",
+      dialect: env.DB_DIALECT,
+      define: {
+        freezeTableName: true,
+        timestamps: false,
+      },
+=======
     port: env.PORT,
     db: {
         development: {
@@ -26,6 +41,7 @@ const config = {
                 timestamps: false,
             },
         },
+>>>>>>> main
     },
 }
 
