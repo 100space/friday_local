@@ -1,10 +1,11 @@
-{% extends 'layout/layout.html'%}
-{% block content %}
-<h2>환영합니다.</h2>
-<div>
-    {{userid}} <br>
-    {{userpw}} <br>
-    {{username}} <br>
+{% extends 'layout/layout.html'%} {% block content %}
+<div id="welcomeWrap" class="w120">
+    <h2>{{nickname}}님 환영합니다.</h2>
+    <div>
+        {{userid}} <br /><br />
+        {{userpw}} <br /><br />
+        {{username}} <br /><br />
+    </div>
+    <a href="/">메인페이지 이동</a>
 </div>
-<a href="/">메인페이지 이동</a>
 {% endblock %}
