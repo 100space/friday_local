@@ -3,6 +3,16 @@ class CheckRepository {
     this.Users = Users;
   }
 
+  async duplicateCheck(data) {
+    try {
+      const result = await this.Users.findOne({ where: data, raw: true });
+      console.log(result);
+      return result;
+    } catch (e) {
+      throw new Error(e);
+    }
+  }
+
   async findLoginUser({ userid, userpw }) {
     try {
       const user = await this.Users.findOne({

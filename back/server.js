@@ -4,7 +4,7 @@ const { sequelize } = require("./models");
 // const test = require("./check/check.module");
 
 app.listen(process.env.PORT, async () => {
-  await sequelize.sync({ force: false });
+  await sequelize.sync({ force: true });
   console.log(`Server Start`);
   // await test.addUser({ userid: "test", userpw: "1234", username: "hello", nickname: "bb", birth: "1234-12-12", phonenum: "010-1234-1234" });
   // await test.signup({ userid: "test", userpw: "1234", username: "hello", nickname: "bb", birth: "1234-12-12", phonenum: "010-1234-1234" });
