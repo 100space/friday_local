@@ -3,6 +3,7 @@ const env = process.env;
 
 const config = {
   port: env.PORT,
+  salt: env.SALT,
   db: {
     development: {
       username: env.DB_USER || "foo",

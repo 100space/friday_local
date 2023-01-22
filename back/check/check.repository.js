@@ -6,7 +6,6 @@ class CheckRepository {
   async duplicateCheck(data) {
     try {
       const result = await this.Users.findOne({ where: data, raw: true });
-      console.log(result);
       return result;
     } catch (e) {
       throw new Error(e);
