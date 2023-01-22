@@ -11,8 +11,10 @@ const submitHandler = async (e) => {
             userid: userid.value,
             userpw: userpw.value,
         })
+        console.log(response)
         if (response.status === 200) {
-            localStorage.href = "/"
+            document.cookie = `token=${response.data.token};`
+            location.href = "/"
         }
     } catch (e) {
         alert("아이디와 패스워드가 일치하지 않는다.")

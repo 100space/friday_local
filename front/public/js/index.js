@@ -7,7 +7,7 @@ const checkNick = document.querySelector("#checkNick")
 const userid = document.querySelector("#userid")
 const nickname = document.querySelector("#nickname")
 
-const checkHandler = async (e) => {
+const IDcheckHandler = async (e) => {
     // if (e.target.id == userid) {
     //     vari = userid
     // } else if (e.target.id == nickname) {
@@ -16,15 +16,29 @@ const checkHandler = async (e) => {
     let vari = e.target.id
     console.log(vari)
     const response = await request.get(`/check/?${vari}=${e.target.value}`)
-    const { isCorrect } = response.data
-    if (isCorrect) {
-        checkId.style.color = "green"
-        checkId.innerHTML = "√"
-    } else {
+    console.log(response.data)
+    const { duplicate } = response.data
+    if (vari === "userid" && duplicate) {
         checkId.style.color = "red"
         checkId.innerHTML = "X"
+    } else {
+        checkId.style.color = "green"
+        checkId.innerHTML = "√"
     }
 }
-
-userid.addEventListener("input", checkHandler)
+const checkHandler = async (e) => {
+    let vari = e.target.id
+    console.log(vari)
+    const response = await request.get(`/check/?${vari}=${e.target.value}`)
+    console.log(response.data)
+    const { duplicate } = response.data
+    if (vari === "nickname" && duplicate) {
+        checkNick.style.color = "red"
+        checkNick.innerHTML = "X"
+    } else {
+        checkNick.style.color = "green"
+        checkNick.innerHTML = "√"
+    }
+}
+userid.addEventListener("input", IDcheckHandler)
 nickname.addEventListener("input", checkHandler)
