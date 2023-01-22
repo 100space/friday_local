@@ -1,4 +1,1342 @@
-{% extends 'layout/layout.html'%}
-{% block content %}
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="generator" content="Aspose.Words for .NET 23.1.0" /><title></title><style type="text/css">body { font-family:Calibri; font-size:11pt }h1, h2, h3, p { margin:0pt 0pt 8pt }li, table { margin-top:0pt; margin-bottom:8pt }h1 { margin-top:12pt; margin-bottom:3pt; page-break-after:avoid; font-family:Arial; font-size:16pt; font-weight:bold }h2 { margin-top:12pt; margin-bottom:3pt; page-break-after:avoid; font-family:Arial; font-size:14pt; font-weight:bold; font-style:italic }h3 { margin-top:12pt; margin-bottom:3pt; page-break-after:avoid; font-family:Arial; font-size:13pt; font-weight:bold }.Quote { margin-bottom:8pt; border-left:2.25pt solid #9f9f9f; font-size:11pt; font-style:italic; color:#000000 }span.QuoteChar { font-size:12pt; font-style:italic; color:#000000 }</style></head><body><div><h1><span style="font-family:Calibri; font-weight:normal">백종환 이민수 조</span></h1><h2><span style="font-family:Calibri; font-weight:normal; font-style:normal">설명</span></h2><p style="margin-left:36pt; text-indent:-18pt; -aw-import:list-item; -aw-list-level-number:0; -aw-list-number-format:'-'; -aw-list-number-styles:'bullet'; -aw-list-padding-sml:11.4pt"><span style="-aw-import:ignore"><span><span style="font-family:'Courier New'">-</span></span><span style="width:11.4pt; font:7pt 'Times New Roman'; display:inline-block; -aw-import:spaces">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span></span><span>프로젝트 기간 : 2023년 1월 20일 &lt;br&gt;</span></p><p style="margin-left:36pt; text-indent:-18pt; -aw-import:list-item; -aw-list-level-number:0; -aw-list-number-format:'-'; -aw-list-number-styles:'bullet'; -aw-list-padding-sml:11.4pt"><span style="-aw-import:ignore"><span><span style="font-family:'Courier New'">-</span></span><span style="width:11.4pt; font:7pt 'Times New Roman'; display:inline-block; -aw-import:spaces">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span></span><span>팀원 : 이민수(팀장), 백종환</span></p><h3><span style="font-weight:normal">Front Server</span></h3><p class="Quote"><span style="font-style:normal">http://127.0.0.1:3005</span></p><h3><span style="font-weight:normal">Back Server</span></h3><p class="Quote"><span style="font-style:normal">http://127.0.0.1:3000</span></p><h1><span style="font-weight:normal">BASIC</span></h1><table cellspacing="0" cellpadding="0" style="width:100%; margin-bottom:0pt; border:0.75pt solid #000000; -aw-border:0.5pt single; -aw-border-insideh:0.5pt single #000000; -aw-border-insidev:0.5pt single #000000; border-collapse:collapse"><tr><td style="border-right-style:solid; border-right-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-right:0.5pt single"><h1 style="text-align:center"><span style="font-weight:normal">Method</span></h1></td><td style="border-right-style:solid; border-right-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single; -aw-border-right:0.5pt single"><h1 style="text-align:center"><span style="font-weight:normal">routes</span></h1></td><td style="border-right-style:solid; border-right-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single; -aw-border-right:0.5pt single"><h1 style="text-align:center"><span style="font-family:Calibri; font-weight:normal">이름</span></h1></td><td style="border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single"><h1 style="text-align:center"><span style="font-family:Calibri; font-weight:normal">설명</span></h1></td></tr><tr><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><h1 style="text-align:center"><span style="font-weight:normal">GET</span></h1></td><td style="border-style:solid; border-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border:0.5pt single"><h1 style="text-align:center"><span style="font-weight:normal">/</span></h1></td><td style="border-style:solid; border-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border:0.5pt single"><h1 style="text-align:center"><span style="font-family:Calibri; font-weight:normal">메인페이지</span></h1></td><td style="border-top-style:solid; border-top-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single; -aw-border-top:0.5pt single"><h1 style="text-align:center"><span style="font-family:Calibri; font-weight:normal">메인페이지 이동</span></h1></td></tr><tr><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><h1 style="text-align:center"><span style="font-weight:normal">GET</span></h1></td><td style="border-style:solid; border-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border:0.5pt single"><h1 style="text-align:center"><span style="font-weight:normal">/about</span></h1></td><td style="border-style:solid; border-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border:0.5pt single"><h1 style="text-align:center"><span style="font-weight:normal">About</span><span style="font-family:Calibri; font-weight:normal">페이지</span></h1></td><td style="border-top-style:solid; border-top-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single; -aw-border-top:0.5pt single"><h1 style="text-align:center"><span style="font-weight:normal">About</span><span style="font-family:Calibri; font-weight:normal">페이지 이동</span></h1></td></tr><tr><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><h1 style="text-align:center"><span style="font-weight:normal">GET</span></h1></td><td style="border-style:solid; border-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border:0.5pt single"><h1 style="text-align:center"><span style="font-weight:normal">/signin</span></h1></td><td style="border-style:solid; border-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border:0.5pt single"><h1 style="text-align:center"><span style="font-family:Calibri; font-weight:normal">로그인페이지</span></h1></td><td style="border-top-style:solid; border-top-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single; -aw-border-top:0.5pt single"><h1 style="text-align:center"><span style="font-family:Calibri; font-weight:normal">로그인페이지 이동</span></h1></td></tr><tr><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><h1 style="text-align:center"><span style="font-weight:normal">GET</span></h1></td><td style="border-style:solid; border-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border:0.5pt single"><h1 style="text-align:center"><span style="font-weight:normal">/welcome</span></h1></td><td style="border-style:solid; border-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border:0.5pt single"><h1 style="text-align:center"><span style="font-family:Calibri; font-weight:normal">로그인 성공 페이지</span></h1></td><td style="border-top-style:solid; border-top-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single; -aw-border-top:0.5pt single"><h1 style="text-align:center"><span style="font-family:Calibri; font-weight:normal">로그인에 성공하면 보여지는 페이지</span></h1></td></tr><tr><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><h1 style="text-align:center"><span style="font-weight:normal">GET</span></h1></td><td style="border-style:solid; border-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border:0.5pt single"><h1 style="text-align:center"><span style="font-weight:normal">/signup</span></h1></td><td style="border-style:solid; border-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border:0.5pt single"><h1 style="text-align:center"><span style="font-family:Calibri; font-weight:normal">회원가입페이지</span></h1></td><td style="border-top-style:solid; border-top-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single; -aw-border-top:0.5pt single"><h1 style="text-align:center"><span style="font-family:Calibri; font-weight:normal">회원가입페이지 이동</span></h1></td></tr><tr><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><h1 style="text-align:center"><span style="font-weight:normal">GET</span></h1></td><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-left:0.5pt single; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><h1 style="text-align:center"><span style="font-weight:normal">/oauth/kakao</span></h1></td><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-left:0.5pt single; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><h1 style="text-align:center"><span style="font-family:Calibri; font-weight:normal">카카오로그인</span></h1></td><td style="border-top-style:solid; border-top-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-left:0.5pt single; -aw-border-top:0.5pt single"><h1 style="text-align:center"><span style="font-family:Calibri; font-weight:normal">카카오로그인 하기</span></h1></td></tr></table><h1><span style="font-weight:normal; -aw-import:ignore">&#xa0;</span></h1><h1><span style="font-weight:normal">AXIOS</span></h1><p class="Quote"><span style="font-style:normal">http://127.0.0.1:3000</span></p><table cellspacing="0" cellpadding="0" style="width:100%; margin-bottom:0pt; border:0.75pt solid #000000; -aw-border:0.5pt single; -aw-border-insideh:0.5pt single #000000; -aw-border-insidev:0.5pt single #000000; border-collapse:collapse"><tr><td style="border-right-style:solid; border-right-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-right:0.5pt single"><p class="Quote" style="text-align:center"><span style="font-style:normal">Method</span></p></td><td style="border-right-style:solid; border-right-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single; -aw-border-right:0.5pt single"><p class="Quote" style="text-align:center"><span style="font-style:normal">routes</span></p></td><td style="border-right-style:solid; border-right-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single; -aw-border-right:0.5pt single"><p class="Quote" style="text-align:center"><span style="font-style:normal">이름</span></p></td><td style="border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single"><p class="Quote" style="text-align:center"><span style="font-style:normal">설명</span></p></td></tr><tr><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><p class="Quote" style="text-align:center"><span style="font-style:normal">GET</span></p></td><td style="border-style:solid; border-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border:0.5pt single"><p class="Quote" style="text-align:center"><span style="font-style:normal">/users</span></p></td><td style="border-style:solid; border-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border:0.5pt single"><p class="Quote" style="text-align:center"><span style="font-style:normal">프로필확인</span></p></td><td style="border-top-style:solid; border-top-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single; -aw-border-top:0.5pt single"><p class="Quote" style="text-align:center"><span style="font-style:normal">토큰을 같이 보낸다</span></p></td></tr><tr><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><p class="Quote" style="text-align:center"><span style="font-style:normal">POST</span></p></td><td style="border-style:solid; border-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border:0.5pt single"><p class="Quote" style="text-align:center"><span style="font-style:normal">/users</span></p></td><td style="border-style:solid; border-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border:0.5pt single"><p class="Quote" style="text-align:center"><span style="font-style:normal">회원가입</span></p></td><td style="border-top-style:solid; border-top-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single; -aw-border-top:0.5pt single"><p class="Quote" style="text-align:center"><span style="font-style:normal">회원가입</span></p></td></tr><tr><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><p class="Quote" style="text-align:center"><span style="font-style:normal">PUT</span></p></td><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-left:0.5pt single; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><p class="Quote" style="text-align:center"><span style="font-style:normal">/users</span></p></td><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-left:0.5pt single; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><p class="Quote" style="text-align:center"><span style="font-style:normal">회원정보수정</span></p></td><td style="border-top-style:solid; border-top-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-left:0.5pt single; -aw-border-top:0.5pt single"><p class="Quote" style="text-align:center"><span style="font-style:normal">회원 정보 수정</span></p></td></tr></table><p class="Quote"><span style="font-style:normal; -aw-import:ignore">&#xa0;</span></p><table cellspacing="0" cellpadding="0" style="width:100%; margin-bottom:0pt; border:0.75pt solid #000000; -aw-border:0.5pt single; -aw-border-insideh:0.5pt single #000000; -aw-border-insidev:0.5pt single #000000; border-collapse:collapse"><tr><td style="border-right-style:solid; border-right-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-right:0.5pt single"><p style="text-align:center; font-size:11pt"><span>Method</span></p></td><td style="border-right-style:solid; border-right-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single; -aw-border-right:0.5pt single"><p style="text-align:center; font-size:11pt"><span>routes</span></p></td><td style="border-right-style:solid; border-right-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single; -aw-border-right:0.5pt single"><p style="text-align:center; font-size:11pt"><span>이름</span></p></td><td style="border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single"><p style="text-align:center; font-size:11pt"><span>설명</span></p></td></tr><tr><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><p style="text-align:center; font-size:11pt"><span>GET</span></p></td><td style="border-style:solid; border-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border:0.5pt single"><p style="text-align:center; font-size:11pt"><span>/check/?userid</span></p></td><td style="border-style:solid; border-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border:0.5pt single"><p style="text-align:center; font-size:11pt"><span>아이디확인</span></p></td><td style="border-top-style:solid; border-top-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-bottom:0.5pt single; -aw-border-left:0.5pt single; -aw-border-top:0.5pt single"><p style="text-align:center; font-size:11pt"><span>아이디 중복확인</span></p></td></tr><tr><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><p style="text-align:center; font-size:11pt"><span>GET</span></p></td><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-left:0.5pt single; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><p style="text-align:center; font-size:11pt"><span>/check/?nickname</span></p></td><td style="border-top-style:solid; border-top-width:0.75pt; border-right-style:solid; border-right-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-left:0.5pt single; -aw-border-right:0.5pt single; -aw-border-top:0.5pt single"><p style="text-align:center; font-size:11pt"><span>닉네임</span></p></td><td style="border-top-style:solid; border-top-width:0.75pt; border-left-style:solid; border-left-width:0.75pt; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top; -aw-border-left:0.5pt single; -aw-border-top:0.5pt single"><p style="text-align:center; font-size:11pt"><span>닉네임 중복확인</span></p></td></tr></table><p><span style="-aw-import:ignore">&#xa0;</span></p></div></body></html>
+{% extends 'layout/layout.html'%} {% block content %}
+<html style="width: 88vw; margin: 0 auto">
+    <head>
+        <style type="text/css">
+            body {
+                font-family: Calibri;
+                font-size: 11pt;
+            }
+            h1,
+            h2,
+            h3,
+            p {
+                margin: 0pt 0pt 8pt;
+                font-size: 14pt !important;
+            }
+            li,
+            table {
+                margin-top: 0pt;
+                margin-bottom: 8pt;
+                font-size: 2rem;
+            }
+            h1 {
+                margin-top: 12pt;
+                margin-bottom: 3pt;
+                page-break-after: avoid;
+                font-family: Arial;
+                font-size: 16pt;
+                font-weight: bold;
+            }
+            h2 {
+                margin-top: 12pt;
+                margin-bottom: 3pt;
+                page-break-after: avoid;
+                font-family: Arial;
+                font-size: 14pt;
+                font-weight: bold;
+                font-style: italic;
+            }
+            h3 {
+                margin-top: 12pt;
+                margin-bottom: 3pt;
+                page-break-after: avoid;
+                font-family: Arial;
+                font-size: 14pt;
+                font-weight: bold;
+            }
+            .Quote {
+                margin-bottom: 8pt;
+                /* border-left: 2.25pt solid #9f9f9f; */
+                font-size: 14pt;
+                font-style: italic;
+                color: #000000;
+            }
+            span.QuoteChar {
+                font-size: 14pt;
+                font-style: italic;
+                color: #000000;
+            }
+            tbody {
+                font-size: 2rem !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>
+                <span
+                    style="
+                        font-family: Calibri;
+                        font-weight: normal;
+                        font-size: 4rem;
+                    "
+                >
+                    백종환 이민수 조
+                </span>
+            </h1>
+            <h2>
+                <span
+                    style="
+                        font-family: Calibri;
+                        font-weight: normal;
+                        font-style: normal;
+                    "
+                >
+                    설명
+                </span>
+            </h2>
+            <p
+                style="
+                    margin-left: 36pt;
+                    text-indent: -18pt;
+                    -aw-import: list-item;
+                    -aw-list-level-number: 0;
+                    -aw-list-number-format: '-';
+                    -aw-list-number-styles: 'bullet';
+                    -aw-list-padding-sml: 11.4pt;
+                "
+            >
+                <span style="-aw-import: ignore">
+                    <span>
+                        <span style="font-family: 'Courier New'"> - </span>
+                    </span>
+                    <span
+                        style="
+                            width: 11.4pt;
+                            font: 7pt 'Times New Roman';
+                            display: inline-block;
+                            -aw-import: spaces;
+                        "
+                    >
+                        &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+                    </span>
+                </span>
+                <span> 프로젝트 기간 : 2023년 1월 20일 &lt;br&gt; </span>
+            </p>
+            <p
+                style="
+                    margin-left: 36pt;
+                    text-indent: -18pt;
+                    -aw-import: list-item;
+                    -aw-list-level-number: 0;
+                    -aw-list-number-format: '-';
+                    -aw-list-number-styles: 'bullet';
+                    -aw-list-padding-sml: 11.4pt;
+                "
+            >
+                <span style="-aw-import: ignore">
+                    <span>
+                        <span style="font-family: 'Courier New'"> - </span>
+                    </span>
+                    <span
+                        style="
+                            width: 11.4pt;
+                            font: 7pt 'Times New Roman';
+                            display: inline-block;
+                            -aw-import: spaces;
+                        "
+                    >
+                        &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+                    </span>
+                </span>
+                <span> 팀원 : 이민수(팀장), 백종환 </span>
+            </p>
+            <h3>
+                <span style="font-weight: normal; font-size: 2.4rem">
+                    Front Server
+                </span>
+            </h3>
+            <p class="Quote">
+                <span style="font-style: normal"> http://127.0.0.1:3005 </span>
+            </p>
+            <h3>
+                <span style="font-weight: normal; font-size: 2.4rem">
+                    Back Server
+                </span>
+            </h3>
+            <p class="Quote">
+                <span style="font-style: normal"> http://127.0.0.1:3000 </span>
+            </p>
+            <h1>
+                <span style="font-weight: normal">BASIC</span>
+            </h1>
+            <table
+                cellspacing="0"
+                cellpadding="0"
+                style="
+                    width: 80%;
+                    margin: 0 auto;
+                    border: 0.75pt solid #000000;
+                    -aw-border: 0.5pt single;
+                    -aw-border-insideh: 0.5pt single #000000;
+                    -aw-border-insidev: 0.5pt single #000000;
+                    border-collapse: collapse;
+                "
+            >
+                <tr>
+                    <td
+                        style="
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            background-color: darkgrey;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">Method</span>
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            background-color: darkgrey;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">Routes</span>
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            background-color: darkgrey;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span
+                                style="
+                                    font-family: Calibri;
+                                    font-weight: normal;
+                                "
+                                >이름</span
+                            >
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            background-color: darkgrey;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-left: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span
+                                style="
+                                    font-family: Calibri;
+                                    font-weight: normal;
+                                "
+                                >설명</span
+                            >
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="
+                            background-color: rgb(225, 225, 225);
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">GET</span>
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-style: solid;
+                            border-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">/</span>
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-style: solid;
+                            border-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span
+                                style="
+                                    font-family: Calibri;
+                                    font-weight: normal;
+                                "
+                                >메인페이지</span
+                            >
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span
+                                style="
+                                    font-family: Calibri;
+                                    font-weight: normal;
+                                "
+                                >메인페이지 이동</span
+                            >
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                            background-color: rgb(225, 225, 225);
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">GET</span>
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-style: solid;
+                            border-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">/about</span>
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-style: solid;
+                            border-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">About</span
+                            ><span
+                                style="
+                                    font-family: Calibri;
+                                    font-weight: normal;
+                                "
+                                >페이지</span
+                            >
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">About</span
+                            ><span
+                                style="
+                                    font-family: Calibri;
+                                    font-weight: normal;
+                                "
+                                >페이지 이동</span
+                            >
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                            background-color: rgb(225, 225, 225);
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">GET</span>
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-style: solid;
+                            border-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">/signin</span>
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-style: solid;
+                            border-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span
+                                style="
+                                    font-family: Calibri;
+                                    font-weight: normal;
+                                "
+                                >로그인페이지</span
+                            >
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span
+                                style="
+                                    font-family: Calibri;
+                                    font-weight: normal;
+                                "
+                                >로그인페이지 이동</span
+                            >
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                            background-color: rgb(225, 225, 225);
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">GET</span>
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-style: solid;
+                            border-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">/welcome</span>
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-style: solid;
+                            border-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span
+                                style="
+                                    font-family: Calibri;
+                                    font-weight: normal;
+                                "
+                                >로그인 성공 페이지</span
+                            >
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span
+                                style="
+                                    font-family: Calibri;
+                                    font-weight: normal;
+                                "
+                                >로그인에 성공하면 보여지는 페이지</span
+                            >
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                            background-color: rgb(225, 225, 225);
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">GET</span>
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-style: solid;
+                            border-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">/signup</span>
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-style: solid;
+                            border-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span
+                                style="
+                                    font-family: Calibri;
+                                    font-weight: normal;
+                                "
+                                >회원가입페이지</span
+                            >
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span
+                                style="
+                                    font-family: Calibri;
+                                    font-weight: normal;
+                                "
+                                >회원가입페이지 이동</span
+                            >
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                            background-color: rgb(225, 225, 225);
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">GET</span>
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal"
+                                >/oauth/kakao</span
+                            >
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span
+                                style="
+                                    font-family: Calibri;
+                                    font-weight: normal;
+                                "
+                                >카카오로그인</span
+                            >
+                        </h1>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span
+                                style="
+                                    font-family: Calibri;
+                                    font-weight: normal;
+                                "
+                                >카카오로그인 하기</span
+                            >
+                        </h1>
+                    </td>
+                </tr>
+            </table>
+            <h1>
+                <span style="font-weight: normal; -aw-import: ignore"
+                    >&#xa0;</span
+                >
+            </h1>
+            <h1><span style="font-weight: normal">AXIOS</span></h1>
+            <p class="Quote">
+                <span style="font-style: normal">http://127.0.0.1:3000</span>
+            </p>
+            <table
+                cellspacing="0"
+                cellpadding="0"
+                style="
+                    width: 80%;
+                    margin: 0 auto;
+                    border: 0.75pt solid #000000;
+                    -aw-border: 0.5pt single;
+                    -aw-border-insideh: 0.5pt single #000000;
+                    -aw-border-insidev: 0.5pt single #000000;
+                    border-collapse: collapse;
+                "
+            >
+                <tr>
+                    <td
+                        style="
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            background-color: darkgrey;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">Method</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                        "
+                    >
+                        <p class="Quote" style="text-align: center">
+                            <span style="font-style: normal">routes</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            background-color: darkgrey;
+                        "
+                    >
+                        <p class="Quote" style="text-align: center">
+                            <span style="font-style: normal">이름</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-left: 0.5pt single;
+                            background-color: darkgrey;
+                        "
+                    >
+                        <p class="Quote" style="text-align: center">
+                            <span style="font-style: normal">설명</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <p class="Quote" style="text-align: center">
+                            <span style="font-style: normal">GET</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-style: solid;
+                            border-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border: 0.5pt single;
+                        "
+                    >
+                        <p class="Quote" style="text-align: center">
+                            <span style="font-style: normal">/users</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-style: solid;
+                            border-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border: 0.5pt single;
+                        "
+                    >
+                        <p class="Quote" style="text-align: center">
+                            <span style="font-style: normal">프로필확인</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <p class="Quote" style="text-align: center">
+                            <span style="font-style: normal"
+                                >토큰을 같이 보낸다</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <p class="Quote" style="text-align: center">
+                            <span style="font-style: normal">POST</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-style: solid;
+                            border-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border: 0.5pt single;
+                        "
+                    >
+                        <p class="Quote" style="text-align: center">
+                            <span style="font-style: normal">/users</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-style: solid;
+                            border-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border: 0.5pt single;
+                        "
+                    >
+                        <p class="Quote" style="text-align: center">
+                            <span style="font-style: normal">회원가입</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <p class="Quote" style="text-align: center">
+                            <span style="font-style: normal">회원가입</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <p class="Quote" style="text-align: center">
+                            <span style="font-style: normal">PUT</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <p class="Quote" style="text-align: center">
+                            <span style="font-style: normal">/users</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <p class="Quote" style="text-align: center">
+                            <span style="font-style: normal">회원정보수정</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <p class="Quote" style="text-align: center">
+                            <span style="font-style: normal"
+                                >회원 정보 수정</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <p class="Quote">
+                <span style="font-style: normal; -aw-import: ignore"
+                    >&#xa0;</span
+                >
+            </p>
+            <table
+                cellspacing="0"
+                cellpadding="0"
+                style="
+                    width: 80%;
+                    margin: 0 auto;
+                    border: 0.75pt solid #000000;
+                    -aw-border: 0.5pt single;
+                    -aw-border-insideh: 0.5pt single #000000;
+                    -aw-border-insidev: 0.5pt single #000000;
+                    border-collapse: collapse;
+                "
+            >
+                <tr>
+                    <td
+                        style="
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            background-color: darkgrey;
+                        "
+                    >
+                        <h1 style="text-align: center">
+                            <span style="font-weight: normal">Method</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                        "
+                    >
+                        <p style="text-align: center; font-size: 11pt">
+                            <span>routes</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                        "
+                    >
+                        <p style="text-align: center; font-size: 11pt">
+                            <span>이름</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-left: 0.5pt single;
+                        "
+                    >
+                        <p style="text-align: center; font-size: 11pt">
+                            <span>설명</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <p style="text-align: center; font-size: 11pt">
+                            <span>GET</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-style: solid;
+                            border-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border: 0.5pt single;
+                        "
+                    >
+                        <p style="text-align: center; font-size: 11pt">
+                            <span>/check/?userid</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-style: solid;
+                            border-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border: 0.5pt single;
+                        "
+                    >
+                        <p style="text-align: center; font-size: 11pt">
+                            <span>아이디확인</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            border-bottom-style: solid;
+                            border-bottom-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-bottom: 0.5pt single;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <p style="text-align: center; font-size: 11pt">
+                            <span>아이디 중복확인</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <p style="text-align: center; font-size: 11pt">
+                            <span>GET</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <p style="text-align: center; font-size: 11pt">
+                            <span>/check/?nickname</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-right-style: solid;
+                            border-right-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-right: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <p style="text-align: center; font-size: 11pt">
+                            <span>닉네임</span>
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            border-top-style: solid;
+                            border-top-width: 0.75pt;
+                            border-left-style: solid;
+                            border-left-width: 0.75pt;
+                            padding-right: 5.03pt;
+                            padding-left: 5.03pt;
+                            vertical-align: top;
+                            -aw-border-left: 0.5pt single;
+                            -aw-border-top: 0.5pt single;
+                        "
+                    >
+                        <p style="text-align: center; font-size: 11pt">
+                            <span>닉네임 중복확인</span>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <p><span style="-aw-import: ignore">&#xa0;</span></p>
+        </div>
+    </body>
+</html>
 {% endblock %}
